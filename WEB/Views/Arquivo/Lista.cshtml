@@ -1,0 +1,131 @@
+﻿@model ArquivosListaViewModel
+
+@{
+    ViewData["Title"] = "Arquivo Lista";
+}
+
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-6" style="padding: 15px 0 0 10px;">
+            <img class="icone-web d-inline" src="~/img/PromoIconeColor.svg" />
+            <h5 class="d-inline">Arquivos</h5>
+        </div>
+
+        @if (!User.IsInRole("com"))
+        {
+            <div class="col-6">
+                <a asp-controller="Arquivo" asp-action="Novo" class="btn btn-outline-primary float-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                    </svg>
+                </a>
+            </div>
+        }
+
+    </div>
+</div>
+
+<hr />
+
+<div class="row">
+
+    <section class="col-12 col-sm-4">
+        <form asp-controller="Arquivo" asp-action="Pesquisa" role="form" method="post">
+            <div class="input-group mb-3">
+                <input type="hidden" asp-for="TipoPesquisa" value="PromoId" />
+
+                <button class="btn btn-outline-primary" type="submit" id="button-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+                <input type="text" class="form-control" placeholder="PROMO ID" aria-label="Example text with button addon" aria-describedby="button-addon1" asp-for="PromoId" value="">
+            </div>
+        </form>
+
+        <form asp-controller="Arquivo" asp-action="Pesquisa" role="form" method="post">
+            <div class="input-group mb-3">
+                <input type="hidden" asp-for="TipoPesquisa" value="CodigoCliente" />
+
+                <button class="btn btn-outline-primary" type="submit" id="button-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+                <input type="text" class="form-control" placeholder="CÓDIGO CLIENTE" aria-label="Example text with button addon" aria-describedby="button-addon1" asp-for="CodigoCliente" value="">
+            </div>
+        </form>
+
+        <form asp-controller="Arquivo" asp-action="Pesquisa" role="form" method="post">
+            <div class="input-group mb-3">
+                <input type="hidden" asp-for="TipoPesquisa" value="Calculo" />
+
+                <button class="btn btn-outline-primary" type="submit" id="button-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+                <input type="text" class="form-control" placeholder="NÚMERO CALCULO" aria-label="Example text with button addon" aria-describedby="button-addon1" asp-for="Calculo" value="">
+            </div>
+        </form>
+
+        <form asp-controller="Arquivo" asp-action="Pesquisa" role="form" method="post">
+            <div class="input-group mb-3">
+                <input type="hidden" asp-for="TipoPesquisa" value="Op" />
+
+                <button class="btn btn-outline-primary" type="submit" id="button-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+                <input type="text" class="form-control" placeholder="NÚMERO OP" aria-label="Example text with button addon" aria-describedby="button-addon1" asp-for="Op" value="">
+            </div>
+        </form>
+    </section>
+
+    @{
+        if (ViewBag.Lista == false)
+        {
+            <section class="col-12 col-sm-8">
+                <div class="card text-center border-1 border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Atenção!</h5>
+                        <p class="card-text">Sua busca não retornou registros.</p>
+                        <a asp-controller="Arquivo" asp-action="Lista" class="btn btn-primary">Retornar para Lista</a>
+                    </div>
+                </div>
+            </section>
+        }
+        else
+        {
+            <section class="col-12 col-sm-8">
+                <div class="card border border-primary border-1">
+                    <div class="card-header">
+                        <b>Arquivos</b>
+                    </div>
+                    <div class="row">
+                        <div>
+                            @foreach (var arquivo in Model.Arquivos)
+                            {
+                                <div class="list-group m-2">
+                                    <a asp-controller="Arquivo" asp-action="Detalhe" asp-route-arquivoId="@arquivo.ArquivoId" class="list-group-item list-group-item-action" aria-current="true">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1 fw-bold text-start">@arquivo.ClienteNome.ToUpper()</h5>
+                                            <small>@arquivo.Data.ToString("dd/MM/yy")</small>
+                                        </div>
+                                        <h6 class="fw-bold text-primary mt-2">PROMO-ID @arquivo.ArquivoId</h6>
+                                        <p class="mb-1 text-start">@arquivo.ClienteId.ToUpper()</p>
+                                        <p class="mb-1 text-start">@arquivo.Descricao.ToUpper()</p>
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </section>
+        }
+    }
+
+</div>
+
+

@@ -1,0 +1,63 @@
+/* GLOBAIS */
+body {
+    min-height: 100vh;
+    font-family: Arial;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* LAYOUT PADRÃO */
+.icone-web {
+    height: 25px;
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+#icone-fundo {
+    width: 100%;
+    height: calc(100vh - 90px);
+    text-align: center;
+    padding-top: 170px;
+    text-align: center
+}
+
+    #icone-fundo img {
+        height: 250px;
+    }
+
+/* FORMULARIOS */
+input,
+textarea {
+    text-transform: uppercase
+}
+
+/* ARQUIVO LISTA */
+.arquivo-lista-acoes {
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* CARDS PERSONALIZAÇÃO */
+.card-linha {
+    cursor: pointer;
+    transition: all .4s;
+}
+
+    .card-linha:hover {
+        background-color: #f1f1f1;
+    }
+
+/* LOGIN */
+#login{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0px 0px -175px;
+}

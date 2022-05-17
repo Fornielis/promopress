@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\user\OneDrive\Área de Trabalho\JOB\DEV\_IIS\PromoPi</_PublishTargetUrl>
+    <History>True|2022-05-03T22:56:59.2943229Z;True|2022-04-10T13:33:47.7219879-03:00;True|2022-04-03T16:40:22.4609934-03:00;True|2022-04-03T16:32:34.2853323-03:00;True|2022-04-03T16:07:13.2427165-03:00;True|2022-04-03T15:45:11.4249824-03:00;True|2022-04-03T15:21:51.6202919-03:00;True|2022-04-03T14:51:41.3403814-03:00;True|2022-04-03T14:17:43.0294884-03:00;True|2022-04-03T13:46:59.8374163-03:00;True|2022-04-03T13:45:06.4677915-03:00;</History>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/WEB.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/img/PromoIconeColor.svg" rel="shortcut icon" type="image/x-icon">
+</head>
+<body style="position: relative">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="ocard text-center border border-primary" id="login">
+                <div class="card-header fw-bold mt-4">
+                    <img class="icone-web d-inline" src="~/img/PromoIconeColor.svg" />
+                    LOGIN
+                </div>
+                <div class="card-body">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control text-uppercase" id="floatingInput" placeholder="name@example.com">
+                        <label>Usuário</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control text-uppercase" id="floatingInput" placeholder="name@example.com">
+                        <label>Senha</label>
+                    </div>
+
+                    <a asp-controller="Arquivo" asp-action="Lista" class="btn btn-primary col-12 col-sm-12">ENTRAR</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

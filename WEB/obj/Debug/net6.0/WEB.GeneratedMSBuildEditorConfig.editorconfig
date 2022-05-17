@@ -1,0 +1,76 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WEB
+build_property.RootNamespace = WEB
+build_property.ProjectDir = E:\_DEV\Intranet\WEB\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\_DEV\Intranet\WEB
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/_DEV/Intranet/WEB/Views/Arquivo/Detalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJxdWl2b1xEZXRhbGhlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Arquivo/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJxdWl2b1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Arquivo/EditarIItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJxdWl2b1xFZGl0YXJJSXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Arquivo/EditarOp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJxdWl2b1xFZGl0YXJPcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Arquivo/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJxdWl2b1xMaXN0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Arquivo/NovaOp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJxdWl2b1xOb3ZhT3AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Arquivo/Novo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJxdWl2b1xOb3ZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Arquivo/NovoItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJxdWl2b1xOb3ZvSXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Login/Inicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5pY2lvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Usuario/Usuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xVc3Vhcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/_DEV/Intranet/WEB/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tcgsckyrk2
