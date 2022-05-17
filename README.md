@@ -1,5 +1,5 @@
 <p align="justify">
-<em>Aplicação dividida em duas partes.</em> </br>
+<em>Aplicação em construção!</em> </br>
 <h4>APP WEB</h4>
 APP para gerenciamneto e controle de arquivos </br> 
 
@@ -28,7 +28,3 @@ APP para gerenciamneto e controle de arquivos </br>
 <p align="justify">
 Arquitetura <b>MVC</b> em camadas.
 </p>
-
-<h1 align="center">
-  <img width="80%" src="https://ik.imagekit.io/fornielis/GITHUB/aguias_4DTx7nNqB.PNG?updatedAt=1638088764556"/>
-</h1>
