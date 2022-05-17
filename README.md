@@ -26,5 +26,5 @@ APP para gerenciamneto e controle de arquivos </br>
 
 ## Arquitetura
 <p align="justify">
-Arquitetura <b>MVC</b> em camadas.
+Arquitetura <b>MVC</b> em camadas + Repositories
 </p>
